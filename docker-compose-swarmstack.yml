@@ -1,0 +1,24 @@
+version: "3.4"
+
+networks:
+  default:
+    external:
+      name: swarmstack_net
+
+#configs:
+#  trickster_config:
+#    file: ./trickster.conf
+
+services:
+  trickster:
+    image: tricksterio/trickster:1.0-beta8
+    #configs:
+    #  - source: trickster_config
+    #    target: /etc/trickster/trickster.conf
+    deploy:
+      labels:
+        prometheus.enable: "true"
+        prometheus.port: "8082"
+        prometheus.path: "/metrics"
+      mode: replicated
+      replicas: 1
