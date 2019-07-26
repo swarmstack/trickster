@@ -11,7 +11,7 @@ networks:
 
 services:
   trickster:
-    image: tricksterio/trickster:1.0-beta8
+    image: tricksterio/trickster:1.0-beta
     #configs:
     #  - source: trickster_config
     #    target: /etc/trickster/trickster.conf
