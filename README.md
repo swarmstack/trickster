@@ -4,6 +4,8 @@ Docker compose file for Trickster, Open Source Dashboard Accelerator for Time Se
 
 See [https://github.com/Comcast/trickster](https://github.com/Comcast/trickster) for more details.
 
+See [https://github.com/swarmstack/victoria-metrics](https://github.com/swarmstack/victoria-metrics) for a more performant time-series database that may fulfill your needs without resorting to pulling metrics through a cache such as Trickster. Trickster can also be used to front VictoriaMetrics in cases of extreme load.
+
 ## INSTALLATION
 
 ```
